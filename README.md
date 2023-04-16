@@ -1,14 +1,37 @@
-sliding_puzzle
-==============
 
-A simple sliding blocks puzzle game. You can also create your own puzzle and then click on "Get Url" to get 
-a link which will recreate the puzzle whenever someone clicks on it. 
+# Number Sliding Puzzle 
 
-Here's a tiny commentary about the coding style. I have, in a long time, deviated from using separate screens 
-and provided you with a game in its first screen. I was trying to emulate the actual hardware toy of 
-the same game which is just there and does not have a Main Menu. One of the consequences of this approach 
-is a few lines (maybe more than a few) of repeated code and inefficient algorithms. 
-If you go through the code of game.js file, you'll see a lot of places where you may go "WHY!?" and in certain cases, 
-I've genuinely forgotten why,  even though the I made the whole game in less than a day.  
-So please forgive the crass coding and try and enjoy the game!
+This is a puzzle where you slides numbers so that you arrange the numbers in the order. 
+
+
+## Authors
+
+- [@Sri Mourya Danthala](https://github.com/SriMouryaDanthala)
+
+
+## Deployment
+
+To run this project open the link to the project:
+
+```bash
+  https://elitmus-assignment.vercel.app/ 
+```
+
+
+## Documentation
+
+This project uses the most primitive web programming tools HTML, CSS and Java Script. 
+The main aim is to build a puzzle, that tests the different cognitive abilities of the users.
+
+The puzzle comes an option to solve if you cant solve it.
+
+The steps taken are lively displayed to the user on the screen itself and tnime too is displayed on the screen.
+
+Hope you enjoy playing it.
+
+Thankyou.
+## 🔗 Links
+
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sri-mourya-danthala-9634391ba/)
+
 
