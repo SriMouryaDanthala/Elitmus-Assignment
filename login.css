@@ -1,0 +1,30 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont1{
+    width: 400px;
+    background: rgb(105, 105, 249);
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 30px;
+    color: #333;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+input{
+    margin: 6px;
+    padding: 4px;
+    border-radius: 6px;
+}
+
+label{
+    font-weight: bold;
+    color: white;
+}

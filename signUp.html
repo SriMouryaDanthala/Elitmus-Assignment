@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sliding Puzzle</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="cont1">
+            <label for="email">Email: </label> <br>
+            <input type="text" id="email" placeholder="Enter your Email"><br>
+            <label for="password">Password: </label><br>
+            <input type="password" id="password" placeholder="Enter your Password"><br>
+
+            <button id="signup">Sign Up</button>
+        </div>
+    </div>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-analytics.js";
+      import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-auth.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+          apiKey: "AIzaSyD1nI5dXJcyHhV2sYwJRGTMfz5fUU6cI8w",
+          authDomain: "elitmusassignment-c1c4a.firebaseapp.com",
+          projectId: "elitmusassignment-c1c4a",
+          storageBucket: "elitmusassignment-c1c4a.appspot.com",
+          messagingSenderId: "383083261186",
+          appId: "1:383083261186:web:918ef9ce9fbbf6b757e61b",
+          measurementId: "G-KR8XL5KP0P"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+      const auth = getAuth(app);
+    
+    
+      document.querySelector('#signup').addEventListener('click', function(){
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            createUserWithEmailAndPassword(auth, email, password)
+            .then((userCredential) => {
+                // Signed in 
+                const user = userCredential.user;
+                // ...
+                alert("Login Successful");
+                window.location.replace('home.html');
+            })
+            .catch((error) => {
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                alert(errorCode + " " + errorMessage);
+            });
+        })
+    </script>
+</body>
+</html>
